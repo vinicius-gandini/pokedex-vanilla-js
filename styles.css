@@ -35,6 +35,10 @@ button {
 .title {
   padding: 1rem;
   height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title h3 {
@@ -61,6 +65,7 @@ button {
   font-size: 3rem;
   color: #fff;
   transition: transform 0.2s;
+  margin-bottom: 10rem;
 }
 
 .content button:hover {
@@ -99,11 +104,11 @@ button {
 
 .card span {
   font-weight: bold;
+  font-size: 1rem;
   margin-top: 1rem;
   transform: translateY(50px);
   opacity: 0;
   transition: all 0.2s;
-  text-shadow: 0px 0px 4px #000;
 }
 
 .shiny {
@@ -123,4 +128,175 @@ button {
 .card:hover span {
   transform: translateY(0px);
   opacity: 1;
+}
+
+
+/*============== Pokemon Types ==============*/
+
+.normal {
+  background: #fff;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.fighting {
+  background: #f00;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.flying {
+  background: #90e0ef;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.poison { 
+  background: #7209b7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.ground {
+  background: #7f4724;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.rock {
+  background: #343a40;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.bug {
+  background: #deaaff;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.ghost {
+  background: #bdb2ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.steel {
+  background: #6c757d;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.fire {
+  background: #ca6702;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.water {
+  background: #00bbf9;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.grass {
+  background: #0f0;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.electric {
+  background: #ffb703;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.psychic {
+  background: #ffcbd2;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.ice {
+  background: #0077b6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.dragon {
+  background: #1d3557;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.dark {
+  background: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.fairy {
+  background: #f15bb5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.unknown {
+  background: #e2eafc;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+
+.shadow {
+  background: #006466;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
 }

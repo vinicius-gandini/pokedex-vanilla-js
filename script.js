@@ -1,6 +1,29 @@
 const button = document.getElementById('catch');
 const content = document.querySelector('.content');
 
+const pokeTypes = {
+  normal: 'normal',
+  fighting: 'fighting',
+  flying: 'flying',
+  poison: 'poison',
+  ground: 'ground',
+  rock: 'rock',
+  bug: 'bug',
+  ghost: 'ghost',
+  steel: 'steel',
+  fire: 'fire',
+  water: 'water',
+  grass: 'grass',
+  eletric: 'electric',
+  psychic: 'psychic',
+  ice: 'ice',
+  dragon: 'dragon',
+  dark: 'dark',
+  fairy: 'fairy',
+  unknown: 'unknown',
+  shadow: 'shadow'
+}
+
 let pokemons = [];
 
 function fetchPokemonData(pokemon){
@@ -23,7 +46,6 @@ async function fetchPokemons() {
 }
 
 function renderPokemon(pokeData) {
-    console.log(pokeData);
     button.remove();
     let card = document.createElement('div');
     card.classList.add('card');
@@ -32,7 +54,13 @@ function renderPokemon(pokeData) {
     name.innerText = pokeData.name;
 
     let types = document.createElement('span');
-    types.innerText = pokeData.types.map(type => ' ' + type.type.name);
+    let oneType = pokeData.types.map(type => type.type.name)
+    oneType.forEach(element => {
+      let type = document.createElement('span');
+      type.classList.add(element);
+      type.innerText = element;
+      types.append(type);
+    });
 
     let frontImage = document.createElement('img');
     frontImage.classList.add('front');
