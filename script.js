@@ -26,26 +26,27 @@ const pokeTypes = {
 
 let pokemons = [];
 
-function fetchPokemonData(pokemon){
+async function fetchPokemonData(pokemon){
     let url = pokemon.url;
 
       fetch(url)
       .then(response => response.json())
-      .then(function(pokeData){
-        renderPokemon(pokeData);
+      .then(async function(pokeData){
+        await renderPokemon(pokeData);
       })
 };
 
 async function fetchPokemons() {
     fetch('https://pokeapi.co/api/v2/pokemon?limit=151').then(response => response.json())
-    .then(function(allpokemon){
-    allpokemon.results.forEach(function(pokemon){
-      fetchPokemonData(pokemon); 
+    .then(async function(allpokemon){
+    allpokemon.results.map(async function(pokemon){
+      await fetchPokemonData(pokemon); 
+      return;
     });
 });
 }
 
-function renderPokemon(pokeData) {
+async function renderPokemon(pokeData) {
     button.remove();
     let card = document.createElement('div');
     card.classList.add('card');
